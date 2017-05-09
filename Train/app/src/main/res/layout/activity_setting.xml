@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFDADBDD"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="票价参考"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        android:id="@+id/ticket_price" />
+    <TextView
+        android:id="@+id/train1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="高铁列车"
+        android:textSize="20sp"
+        android:paddingStart="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/withe"
+        android:layout_below="@+id/ticket_price"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/type1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="一等座"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/ticket_price"
+        android:layout_toRightOf="@+id/train1"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/train2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="普速列车"
+        android:textSize="20sp"
+        android:paddingStart="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/withe"
+        android:layout_below="@+id/train1"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/type2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="硬    座"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/train1"
+        android:layout_toRightOf="@+id/train2"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="服务"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_below="@+id/type2" />
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录                                                     >"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/service"
+        android:textColor="#000000" />
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册                                                     >"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/login"
+        android:textColor="#000000" />
+    <TextView
+        android:id="@+id/broast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="车站公告                                             >"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/register"
+        android:textColor="#000000" />
+    <TextView
+        android:id="@+id/direct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="出行向导                                             >"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/broast"
+        android:textColor="#000000" />
+    <TextView
+        android:id="@+id/alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提醒取票                                             >"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/direct"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="其它"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_below="@+id/alarm" />
+    <TextView
+        android:id="@+id/check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="检查新版本                                         >"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/other"
+        android:textColor="#000000" />
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="帮助说明                                             >"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/check"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/suggestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="建议与反馈                                         >"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="100dp"
+        android:layout_below="@+id/help"
+        android:textColor="#000000" />
+
+
+
+</RelativeLayout>
+
+ </ScrollView>

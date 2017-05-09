@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true">
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#FFDADBDD"
     >
-
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:scrollbars="vertical"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:layout_marginTop="40dp"
+            android:id="@+id/content1"
+            android:layout_marginTop="20dp"
             android:background="#FFDADBDD">
             <TextView
                 android:id="@+id/station1"
@@ -57,8 +58,179 @@
                 android:background="#FFFFFF"
                 android:layout_alignParentEnd="true"
                 android:layout_toEndOf="@+id/circle" />
-
-
         </LinearLayout>
-    </ScrollView>
+
+    <TextView
+        android:id="@+id/date_lab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="出发日期"
+        android:textSize="20sp"
+        android:paddingStart="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="30dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/withe"
+        android:layout_below="@+id/content1"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2017-04-16"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="30dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/content1"
+        android:layout_toRightOf="@+id/date_lab"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/time_lab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="出发时间"
+        android:textSize="20sp"
+        android:paddingStart="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="30dp"
+        android:background="@color/withe"
+        android:layout_below="@+id/date_lab"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00:00--24:00"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="30dp"
+        android:layout_below="@+id/date_lab"
+        android:layout_toRightOf="@+id/time_lab"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/train_type_lab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="车型"
+        android:textSize="17sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/withe"
+        android:layout_below="@+id/time_lab" />
+
+    <CheckBox
+        android:id="@+id/all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全部"
+        android:background="@color/withe"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/time_lab"
+        android:layout_toEndOf="@+id/train_type_lab"
+        android:layout_alignBottom="@+id/train_type_lab" />
+
+    <CheckBox
+        android:id="@+id/train1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="G/D/C"
+        android:background="@color/withe"
+        android:layout_alignTop="@+id/all"
+        android:layout_toEndOf="@+id/all"
+        android:layout_alignBottom="@+id/all" />
+
+    <CheckBox
+        android:id="@+id/train2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Z字头"
+        android:background="@color/withe"
+        android:layout_alignTop="@+id/train1"
+        android:layout_toEndOf="@+id/train1"
+        android:layout_alignBottom="@+id/train1" />
+
+    <CheckBox
+        android:id="@+id/train3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="其它"
+        android:background="@color/withe"
+        android:paddingEnd="21dp"
+        android:layout_marginTop="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/time_lab"
+        android:layout_toEndOf="@+id/train2"
+        android:layout_alignBottom="@+id/train2" />
+
+
+    <Button
+        android:id="@+id/query_btn"
+        android:text=" 查询 "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:textColor="#ffffff"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/train3"/>
+
+    <TextView
+        android:id="@+id/load_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-------------------------常用路线------------------------"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/query_btn"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="上饶--南昌"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/load_line" />
+    <TextView
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="北京--南昌"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/line1" />
+    <TextView
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="北京--上海"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="100dp"
+        android:layout_below="@+id/line2" />
 </RelativeLayout>
+
+</ScrollView>
+
+

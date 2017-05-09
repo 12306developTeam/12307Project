@@ -8,14 +8,14 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
-public class RegisterFragment extends Fragment{
+public class PersonInfoFragment extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View RegisterLayout = inflater.inflate(R.layout.activity_register, container, false);
+        View personInfoLayout = inflater.inflate(R.layout.person_info, container, false);
 
-        return RegisterLayout;
+        return personInfoLayout;
     }
-
 }

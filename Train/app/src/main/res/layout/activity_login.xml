@@ -3,12 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#FFDADBDD"
     tools:context=".MainActivity">
+
+
 
     <TextView
         android:id="@+id/user_name"
@@ -89,7 +87,7 @@
         android:text="忘记密码>"
         android:textSize="15sp"
         android:paddingTop="10dp"
-        android:id="@+id/textView"
+        android:id="@+id/forget"
         android:layout_alignTop="@+id/checkBox2"
         android:layout_alignParentEnd="true"
         android:textColor="#050404" />
@@ -102,9 +100,9 @@
        android:layout_height="wrap_content"
        android:background="@drawable/shape"
        android:textColor="#ffffff"
+       android:layout_marginTop="48dp"
        android:layout_below="@+id/checkBox"
-       android:layout_marginTop="20dp"
-       />
+       android:layout_alignParentStart="true" />
 
 
    <Button
@@ -115,7 +113,7 @@
        android:background="@drawable/shape"
        android:textColor="#ffffff"
        android:layout_alignTop="@+id/login_btn"
-       android:layout_alignEnd="@+id/textView" />
+       android:layout_alignParentEnd="true" />
 
 
 </RelativeLayout>
