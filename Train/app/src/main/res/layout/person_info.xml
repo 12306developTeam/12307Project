@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFDADBDD"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="基本信息"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginStart="5dp"
+            android:id="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/user_name_lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用  户  名"
+            android:textSize="20sp"
+            android:paddingStart="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/withe"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXXX"
+            android:background="@color/withe"
+            android:textSize="20sp"
+            android:paddingStart="30dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/textView3"
+            android:layout_toRightOf="@+id/user_name_lab"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/detailInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细信息"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/user_name"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/realname_lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="真实姓名"
+            android:textSize="20sp"
+            android:paddingStart="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="@color/withe"
+            android:layout_below="@+id/detailInfo" />
+
+        <TextView
+            android:id="@+id/realname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXXX"
+            android:background="@color/withe"
+            android:textSize="20sp"
+            android:paddingStart="30dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/detailInfo"
+            android:layout_toRightOf="@+id/realname_lab"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/sex_lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性        别"
+            android:textSize="20sp"
+            android:paddingStart="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/withe"
+            android:layout_below="@+id/realname" />
+
+        <TextView
+            android:id="@+id/sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXXX"
+            android:background="@color/withe"
+            android:textSize="20sp"
+            android:paddingStart="30dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/realname"
+            android:layout_toRightOf="@+id/sex_lab"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/birth_lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="出生日期"
+            android:textSize="20sp"
+            android:paddingStart="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/withe"
+            android:layout_below="@+id/sex" />
+
+        <TextView
+            android:id="@+id/birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXXX"
+            android:background="@color/withe"
+            android:textSize="20sp"
+            android:paddingStart="30dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/sex"
+            android:layout_toRightOf="@+id/birth_lab"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/country_lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="国家地区"
+            android:textSize="20sp"
+            android:paddingStart="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/withe"
+            android:layout_below="@+id/birth" />
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXXX"
+            android:background="@color/withe"
+            android:textSize="20sp"
+            android:paddingStart="30dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/birth"
+            android:layout_toRightOf="@+id/country_lab"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/card_lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="证件类型"
+            android:textSize="20sp"
+            android:paddingStart="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/withe"
+            android:layout_below="@+id/country_lab" />
+
+        <TextView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXXX"
+            android:background="@color/withe"
+            android:textSize="20sp"
+            android:paddingStart="30dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/country_lab"
+            android:layout_toRightOf="@+id/card_lab"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/card_number_lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="证件号码"
+            android:textSize="20sp"
+            android:paddingStart="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/withe"
+            android:layout_below="@+id/card_lab" />
+
+        <TextView
+            android:id="@+id/card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXXX"
+            android:background="@color/withe"
+            android:textSize="20sp"
+            android:paddingStart="30dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/card_lab"
+            android:layout_toRightOf="@+id/card_number_lab"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/contract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系方式"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/card_number_lab"/>
+        <TextView
+            android:id="@+id/phone_number_lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号码"
+            android:textSize="20sp"
+            android:paddingStart="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/withe"
+            android:layout_below="@+id/contract" />
+
+        <TextView
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXXX"
+            android:background="@color/withe"
+            android:textSize="20sp"
+            android:paddingStart="30dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/contract"
+            android:layout_toRightOf="@+id/phone_number_lab"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/email_lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电子邮件"
+            android:textSize="20sp"
+            android:paddingStart="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/withe"
+            android:layout_below="@+id/phone_number_lab" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXXX"
+            android:background="@color/withe"
+            android:textSize="20sp"
+            android:paddingStart="30dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="30dp"
+            android:layout_below="@+id/phone_number_lab"
+            android:layout_toRightOf="@+id/email_lab"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+</ScrollView>

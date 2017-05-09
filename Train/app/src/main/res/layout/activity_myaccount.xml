@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFDADBDD"
+    >
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2017年04月27日 星期四"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:id="@+id/person_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="                个人资料                         >"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/time"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/contract"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="                常用联系人                     >"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/person_info"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/order1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="                未支付订单                     >"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/contract"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/order2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="                已支付订单                     >"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/order1"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/order3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="                已出行订单                     >"
+        android:background="@color/withe"
+        android:textSize="20sp"
+        android:paddingStart="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/order2"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/exit_btn"
+        android:text=" 退出当前账号 "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:textColor="#ffffff"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/order3"/>
+
+</RelativeLayout>

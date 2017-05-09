@@ -22,5 +22,4 @@ public class IndexActivity extends Activity {
         TextView title= (TextView)findViewById(R.id.title);
         title.setText("方案查询");
     }
-
 }

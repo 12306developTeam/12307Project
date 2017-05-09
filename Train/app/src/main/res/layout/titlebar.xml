@@ -6,11 +6,11 @@
     >
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/title_text"
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="40dp"
-        android:text="登录12307"
+        android:text="12307"
         android:textSize="20sp"
         android:gravity="center"
         android:background="#0099CC"

@@ -16,7 +16,7 @@ public class FragmentFactory {
         switch (index) {
 
             case R.id.scheme_query:
-                fragment = new LoginFragment();
+                fragment = new IndexFragment();
                 break;
 
             case R.id.time_query:
@@ -24,11 +24,11 @@ public class FragmentFactory {
                 break;
 
             case R.id.my_account:
-
+                fragment = new MyAccountFragment();
                 break;
 
             case R.id.setting:
-
+                fragment = new SettingFragment();
                 break;
         }
         return fragment;

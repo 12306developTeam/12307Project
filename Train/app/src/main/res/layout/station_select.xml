@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFDADBDD"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SearchView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/withe"
+        android:id="@+id/searchView">
+    </SearchView>
+
+    <RadioGroup
+        android:id="@+id/station_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/usual_station"
+            style="@style/station_tab_item_style"
+            android:checked="true"
+            android:text="常用车站" />
+
+        <RadioButton
+            android:id="@+id/hot_station"
+            style="@style/station_tab_item_style"
+            android:text="热门车站" />
+
+        <RadioButton
+            android:id="@+id/station_list"
+            style="@style/station_tab_item_style"
+            android:text="车站列表" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+</LinearLayout>

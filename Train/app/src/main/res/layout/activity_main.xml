@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <FrameLayout
-        android:id="@+id/title"
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="40dp" />
+        android:layout_height="40dp">
+
+        <fragment
+            android:id="@+id/title"
+            android:name="com.example.administrator.train.TitleFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/titlebar" />
+    </FrameLayout>
+
+
 
     <FrameLayout
         android:id="@+id/content"
@@ -24,6 +34,7 @@
         <RadioButton
             android:id="@+id/scheme_query"
             style="@style/tab_item_style"
+            android:checked="true"
             android:text="方案查询" />
 
         <RadioButton
